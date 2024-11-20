@@ -20,7 +20,7 @@ Some body text of this section.
 
 1. Negador TTL 74LS04 
 
-
+![SeñalCuadradaTTL](./Imagenes/SeñalCuadradaTTL.jpeg)
 
 2. Negador CMOS CD4069
 
