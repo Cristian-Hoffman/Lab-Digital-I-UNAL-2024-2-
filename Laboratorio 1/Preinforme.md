@@ -7,13 +7,18 @@ Some body text of this section.
 
 ## Circuitos equivalentes
 
+1. Negador en BJT
 
-1. Negador TTL 74LS04 
+![EquivalenteTTL](./Imagenes/ModeloTTL.png)
+
+![SeñalTTL](./Imagenes/SeñalCuadradaTTL.jpeg)
 
 
+2. Negador en CMOS 
 
-2. Negador CMOS CD4069
+![EquivalenteCMOS](./Imagenes/ModeloCMOS.png)
 
+![SeñalCMOS](./Imagenes/SeñalequiCMOS.png)
 
 ## Señal cuadrada 1kHz
 
