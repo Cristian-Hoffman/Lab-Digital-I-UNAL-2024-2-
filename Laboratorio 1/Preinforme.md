@@ -11,14 +11,14 @@ Some body text of this section.
 
 ![EquivalenteTTL](./Imagenes/ModeloTTL.png)
 
-![SeñalTTL](./Imagenes/SeñalequiTTL.png)
+![SeñalTTL](./Imagenes/SeñalequiTTL.png=100x200)
 
 
 2. Negador en CMOS 
 
 ![EquivalenteCMOS](./Imagenes/ModeloCMOS.png)
 
-![SeñalCMOS](./Imagenes/SeñalequiCMOS.png)
+![SeñalCMOS](./Imagenes/SeñalequiCMOS.png=100x200)
 
 ## Señal cuadrada 1kHz
 
