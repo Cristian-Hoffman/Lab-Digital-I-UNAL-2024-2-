@@ -11,7 +11,7 @@ Some body text of this section.
 
 ![EquivalenteTTL](./Imagenes/ModeloTTL.png)
 
-![SeñalTTL](./Imagenes/SeñalCuadradaTTL.jpeg)
+![SeñalTTL](./Imagenes/SeñalequiTTL.png)
 
 
 2. Negador en CMOS 
