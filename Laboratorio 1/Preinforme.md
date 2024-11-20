@@ -1,21 +1,11 @@
-Hola que tal? 
-# Section Heading
 
+# COMPARACIÓN DE TECNOLOGÍA CMOS y TTL
+
+
+## Comparacion de de especificaciones 
 Some body text of this section.
 
-<a name="my-custom-anchor-point"></a>
-Some text I want to provide a direct link to, but which doesn't have its own heading.
+## Circuitos equivalentes
 
-(… more content…)
-
-[A link to that custom anchor](#my-custom-anchor-point)
-
-No se esta cargando absolutamente nada 
-
-
-
-
-
-hola que tal 
-
-dasddasdas
+### Negador TTL 74LS04 
+Prueba 1 2 3 
