@@ -108,10 +108,10 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 1. Oscilador con 3 compuertas
 
 
-[3compuertas](./Imagenes/3compuertas.jpeg)
+![3compuertas](./Imagenes/3compuertas.jpeg)
 
 2. Oscilador con 5 compuertas 
 
-[5compuertas](./Imagenes/5compuertas.jpeg)
+![5compuertas](./Imagenes/5compuertas.jpeg)
 
 
