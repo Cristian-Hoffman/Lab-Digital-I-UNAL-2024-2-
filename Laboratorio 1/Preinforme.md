@@ -208,7 +208,7 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 Se montarón dos circuitos diferentes en anillo haciendo uso del negador CMOS, exactamente se realizó una configuración con tres y cinco puertas.
 Sus respectivas simulaciones se pueden observar a continuación:
 
-###Simulaciones
+### Simulaciones
 
 Se empleo una directa de LTspice en la que se indicaba una condición inicial en el circuito, está consistio en la alimentación inicial de un pulso de amplitud 5V. Posteriormente, el circuito oscilaría a partir de esta señal inicial. 
 
@@ -237,7 +237,7 @@ Se empleo una directa de LTspice en la que se indicaba una condición inicial en
 
    Al igual que en la anterior configuración la forma de onda en la simulación es cuadrada debido a la condición inicial; sin embargo, durante el montaje experimental la onda cambiará porque no se le colocará ninguna señal inicial.
 
-###Resultados Experimentales
+### Resultados Experimentales
 
 1. Oscilador con 3 compuertas
 
