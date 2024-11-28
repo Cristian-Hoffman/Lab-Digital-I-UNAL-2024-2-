@@ -134,7 +134,7 @@ Para esto se usaron varias directivas en LTspice, las cuales se pueden ver a con
 
    El resultado obtenido mediante la simulación fue de:
 
-   $t_{f} = 1.53357^{-7}s$
+   $t_{f} = 1.53357x10^{-7}s$
 
 2. Negador CMOS CD4069
 
@@ -144,7 +144,7 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 - Tiempo de subida
 
-El resultado obtenido mediante la simulación fue de:
+   El resultado obtenido mediante la simulación fue de:
 
    $t_{r} = 1.79417x10^{-7}s$
 
@@ -204,6 +204,40 @@ El resultado obtenido mediante la simulación fue de:
 
 
 ## Oscilador en anillo
+
+Se montarón dos circuitos diferentes en anillo haciendo uso del negador CMOS, exactamente se realizó una configuración con tres y cinco puertas.
+Sus respectivas simulaciones se pueden observar a continuación:
+
+###Simulaciones
+
+Se empleo una directa de LTspice en la que se indicaba una condición inicial en el circuito, está consistio en la alimentación inicial de un pulso de amplitud 5V. Posteriormente, el circuito oscilaría a partir de esta señal inicial. 
+
+1. Oscilador con 3 compuertas
+
+   El circuito empleado en la simulación fue el siguiente:
+
+   ![Circuito3Puertas](./Imagenes/Circuito%20oscilador%20de%203.png)
+
+   La frecuencia medida durante la ejecución de la simulación fue de $1.68MHz$, podemos verla en la siguiente imagen.
+
+   ![Frecuencia3Puertas](./Imagenes/Oscilador%20de%203.png)
+
+   Es bueno resaltar que la forma de onda en la simulación es cuadrada debido a la condición inicial mientras que en la prueba experimental dicha forma de onda será totalmente distinta debido a que no se alimentará al circuito con una señal inicial.
+   Esta condición inicial se llevo a cabo en LTspice porque el tiempo de ejecución de la simulación era demasiado alto debido a que no había una señal inicial, sino que era solamente ruido.
+
+2. Oscilador con 5 compuertas
+
+   El circuito empleado en la simulación fue el siguiente:
+
+   ![Circuito5Puertas](./Imagenes/Circuito%20oscilador%20de%205.png)
+
+   La frecuencia medida durante la ejecución de la simulación fue de $751KHz$, podemos verla en la siguiente imagen.
+
+   ![Frecuencia5Puertas](./Imagenes/Oscilador%20de%205.png)
+
+   Al igual que en la anterior configuración la forma de onda en la simulación es cuadrada debido a la condición inicial; sin embargo, durante el montaje experimental la onda cambiará porque no se le colocará ninguna señal inicial.
+
+###Resultados Experimentales
 
 1. Oscilador con 3 compuertas
 
