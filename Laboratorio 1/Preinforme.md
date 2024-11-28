@@ -29,7 +29,7 @@
 
 1. Negador en BJT
 
-Para este caso, si utilizo el modelo dado en la hoja de datos de la compuerta 74LS04, ya que el modelo mas sencillo de compuerta negadora, apenas era notoria la caida de tension debido a las resistencias. 
+Para este caso, se utilizo el modelo dado en la hoja de datos de la compuerta 74LS04, ya que el modelo más sencillo de compuerta negadora, apenas era notoria la caida de tensión debido a las resistencias. 
 
 ![EquivalenteTTL](./Imagenes/ModeloTTL.png)
 
@@ -38,7 +38,7 @@ Para este caso, si utilizo el modelo dado en la hoja de datos de la compuerta 74
 
 2. Negador en CMOS 
 
-Se usa el modelo mas comun de compuerta negadora en CMOS, donde en la salida esta la señal completa, no hay caida de tension o es casi imperceptible.
+Se usa el modelo más comun de compuerta negadora en CMOS, donde en la salida esta la señal completa, no hay caida de tensión o es casi imperceptible.
 
 ![EquivalenteCMOS](./Imagenes/ModeloCMOS.png)
 
@@ -51,22 +51,58 @@ Se usa el modelo mas comun de compuerta negadora en CMOS, donde en la salida est
 
 1. Negador TTL 74LS04 
 
+El circuito que se uso para las distintas simulaciones se puede ver a continuación:
 
+![CircuitoTTL](./Imagenes/Circuito%20TTL.png)
+
+Al aplicarle una señal cuadrada con 1KHz de frecuencia y amplitud 5V, se obtuvo la siguiente gráfica que relaciona la salida con la entrada.
+
+![Entrada-SalidaTTL](./Imagenes/Entrada-Salida%20TTL.png)
+
+En la anterior imagen se puede dar uno cuenta que el circuito efectivamente corresponde al de una compuerta lógica NOT, es decir, que invierte el valor de la señal de entrada.
+Ahora, se gráfica la función de transferencia de este circuito, la cual se puede ver en la siguiente imagen.
+
+![FuncionTransferenciaTTL](./Imagenes/Función%20Transferencia%20TTL%205V.png)
+
+De la función de transferencia se pueden obtener los siguientes valores:
+
++$V_{IL} = 2.479V$
++$V_{IH} = 2.509V$
++$V_{OL} = 4.975V$
++$V_{OH} = 13.971mV$
 
 2. Negador CMOS CD4069
 
+El circuito que se uso para las distintas simulaciones se puede ver a continuación:
 
+![CircuitoCMOS](./Imagenes/Circuito%20CMOS.png)
+
+Al aplicarle una señal cuadrada con 1KHz de frecuencia y amplitud 5V, se obtuvo la siguiente gráfica que relaciona la salida con la entrada.
+
+![Entrada-SalidaCMOS](./Imagenes/Entrada-Salida%20CMOS.png)
+
+En la anterior imagen se puede dar uno cuenta que el circuito efectivamente corresponde al de una compuerta lógica NOT, es decir, que invierte el valor de la señal de entrada.
+Ahora, se gráfica la función de transferencia de este circuito, la cual se puede ver en la siguiente imagen.
+
+![FuncionTransferenciaCMOS](./Imagenes/Función%20Transferencia%20CMOS%205-5V.png)
+
+De la función de transferencia se pueden obtener los siguiente valores:
+
++$V_{IL} = 2.508V$
++$V_{IH} = 2.526V$
++$V_{OL} = 5V$
++$V_{OH} = 2.524mV$
 
 ### Experimentalmente 
 1. Negador TTL 74LS04 
 
-Al observar la salida de la compuerta es notorio que hay una caida de tension bastante grande, lo que confirma el modelo equivalente usado anteriormente.
+Al observar la salida de la compuerta es notorio que hay una caida de tensión bastante grande, lo que confirma el modelo equivalente usado anteriormente.
 
 ![SeñalCuadradaTTL](./Imagenes/SeñalCuadradaTTL.jpeg)
 
 2. Negador CMOS CD4069
 
-Para este caso, aun existe una pequeña caida de tension a la salida de la compuerta, ademas de ser bastante menor comparada a la del negador en TTL, por lo que es un resultado aceptable.
+Para este caso, aun existe una pequeña caida de tension a la salida de la compuerta, además de ser bastante menor comparada a la del negador en TTL, por lo que es un resultado aceptable.
 
 ![SeñalcuadradaCMOS](./Imagenes/señalcuacmos.jpeg)
 
