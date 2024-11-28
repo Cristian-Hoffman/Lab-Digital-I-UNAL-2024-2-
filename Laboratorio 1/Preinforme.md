@@ -10,16 +10,16 @@
 |--------------------------------|--------------------------------------|---------------------------------------|
 | **Tecnología**                 | CMOS (Complementary Metal-Oxide Semiconductor) | TTL (Transistor-Transistor Logic)    |
 | **Número de compuertas**       | 6 inversores                         | 6 inversores                          |
-| **Tensión de alimentación (Vcc)** | 3 V a 15 V                          | 4.75 V a 5.25 V (típicamente 5 V)     |
+| **Tensión de alimentación ($V_{CC}$)** | 3 V a 15 V                          | 4.75 V a 5.25 V (típicamente 5 V)     |
 | **Consumo de corriente**       | Muy bajo (µA en reposo)              | Mayor (mA en reposo)                  |
 | **Velocidad de operación**     | Más lento que TTL                    | Más rápido que CMOS                   |
 | **Corriente de salida**        | Baja (< 1 mA típicamente)            | Alta (hasta 24 mA máx. en salida baja)|
 | **Margen de ruido**            | Mayor debido a la alta impedancia    | Menor debido a la baja impedancia     |
-| **Tiempo de propagación (t_pd)**| Típicamente 50-200 ns                | Típicamente 10-25 ns                  |
+| **Tiempo de propagación ($t_{pd}$)**| Típicamente 50-200 ns                | Típicamente 10-25 ns                  |
 | **Impedancia de entrada**      | Muy alta                             | Baja                                  |
 | **Consumo dinámico**           | Bajo, depende de la frecuencia       | Alto, incluso a frecuencias bajas     |
-| **Nivel lógico alto (V_OL)**   | ~70% de Vcc                          | 2.4 V mín.                            |
-| **Nivel lógico bajo (V_OH)**   | ~30% de Vcc                          | 0.4 V máx.                            |
+| **Nivel lógico alto ($V_{OL}$)**   | ~70% de Vcc                          | 2.4 V mín.                            |
+| **Nivel lógico bajo ($V_{OH}$)**   | ~30% de Vcc                          | 0.4 V máx.                            |
 | **Compatibilidad lógica**      | Compatible con otras familias CMOS   | Compatible con otras familias TTL y algunas CMOS con adaptadores |
 | **Aplicaciones típicas**       | Circuitos de bajo consumo, digitales simples | Circuitos de alta velocidad y cargas más pesadas |
 
@@ -79,6 +79,8 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
    
    - Tiempos de almacenamiento
 
+   Aplica especialmente a compuertas TTL ya que son contruidas en BJT, se refiere al tiempo en el que el transistor deja totalmente la zona de saturancion antes de pasar a la zonas de corte, esto se debe a que el transistor no responde de forma inmediata y permanece en saturacion antes de hacer el cambio, claro esta CMOS tambien se ve afectado por lo mismo, pero sus tiempos de respuesta son mas rapidos. 
+
 ### Simulaciones 
 1. Negador TTL 74LS04 
 
@@ -119,7 +121,15 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
 
 1. Negador TTL 74LS04 
+   - Fan-In 
 
+
+   - Fan-Out 
+   Se puede calcular usando los de su datasheet, en donde se divide la corriente de salida de nivel bajo  entre la corriente de entrada de nivel bajo. 
+
+   $$
+   Fan-Out = \frac{I_{LO}}{I_{LI}} = \frac{8 mA}{0.36 mA} = 2
+   $$
 
 
 2. Negador CMOS CD4069
