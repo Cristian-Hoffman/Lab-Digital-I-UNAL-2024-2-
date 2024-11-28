@@ -15,11 +15,11 @@
 | **Velocidad de operación**     | Más lento que TTL                    | Más rápido que CMOS                   |
 | **Corriente de salida**        | Baja (< 1 mA típicamente)            | Alta (hasta 24 mA máx. en salida baja)|
 | **Margen de ruido**            | Mayor debido a la alta impedancia    | Menor debido a la baja impedancia     |
-| **Tiempo de propagación ($t_(pd)$)**| Típicamente 50-200 ns                | Típicamente 10-25 ns                  |
+| **Tiempo de propagación (t_pd)**| Típicamente 50-200 ns                | Típicamente 10-25 ns                  |
 | **Impedancia de entrada**      | Muy alta                             | Baja                                  |
 | **Consumo dinámico**           | Bajo, depende de la frecuencia       | Alto, incluso a frecuencias bajas     |
-| **Nivel lógico alto ($V_(OL)$)**   | ~70% de Vcc                          | 2.4 V mín.                            |
-| **Nivel lógico bajo ($V_(OH$))**   | ~30% de Vcc                          | 0.4 V máx.                            |
+| **Nivel lógico alto (V_OL)**   | ~70% de Vcc                          | 2.4 V mín.                            |
+| **Nivel lógico bajo (V_OH)**   | ~30% de Vcc                          | 0.4 V máx.                            |
 | **Compatibilidad lógica**      | Compatible con otras familias CMOS   | Compatible con otras familias TTL y algunas CMOS con adaptadores |
 | **Aplicaciones típicas**       | Circuitos de bajo consumo, digitales simples | Circuitos de alta velocidad y cargas más pesadas |
 
