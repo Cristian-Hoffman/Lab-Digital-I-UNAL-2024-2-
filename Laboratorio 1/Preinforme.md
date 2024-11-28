@@ -46,7 +46,6 @@ Se usa el modelo más comun de compuerta negadora en CMOS, donde en la salida es
 
 ## Señal cuadrada 1kHz
 
-
 ### Simulaciones
 
 1. Negador TTL 74LS04 
@@ -96,13 +95,14 @@ De la función de transferencia se pueden obtener los siguiente valores:
 ### Experimentalmente 
 1. Negador TTL 74LS04 
 
-Al observar la salida de la compuerta es notorio que hay una caida de tensión bastante grande, lo que confirma el modelo equivalente usado anteriormente.
+Al observar la salida de la compuerta es notorio que hay una caida de tensión bastante grande, lo que confirma el modelo equivalente de transistores usado anteriormente.
 
 ![SeñalCuadradaTTL](./Imagenes/SeñalCuadradaTTL.jpeg)
 
 2. Negador CMOS CD4069
 
-Para este caso, aun existe una pequeña caida de tension a la salida de la compuerta, además de ser bastante menor comparada a la del negador en TTL, por lo que es un resultado aceptable.
+Para este caso, aún existe una pequeña caida de tensión a la salida de la compuerta, además de ser bastante menor comparada a la del negador en TTL, por lo que es un resultado aceptable.
+Esto se sustenta con el $V_{OL}$ encontrado mediante la función de transferencia, el valor para este parámetro tiene un menor margen con respecto al negador en TTL dando como resultado que la caída de tensión observada sea menor
 
 ![SeñalcuadradaCMOS](./Imagenes/señalcuacmos.jpeg)
 
@@ -110,28 +110,49 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
    - Tiempo de Retardo 
 
-   El tiempo de retardo o tiempo o propagatin delay ($t_p$), se refiere al tiempo que tarda una señal en propagarse en la compuerta, desde que entra hasta que sale, para esto se toman intervalos desde el momento en que la señal de entrada alcanza el 50% de la tension, hasta que la señal de salida alcanza el nivel equivalente. 
+   El tiempo de retardo o tiempo o propagating delay ($t_p$), se refiere al tiempo que tarda una señal en propagarse en la compuerta, desde que entra hasta que sale, para esto se toman intervalos desde el momento en que la señal de entrada alcanza el 50% de la tensión, hasta que la señal de salida alcanza el nivel equivalente. 
 
    
    - Tiempos de almacenamiento
 
-   Aplica especialmente a compuertas TTL ya que son contruidas en BJT, se refiere al tiempo en el que el transistor deja totalmente la zona de saturancion antes de pasar a la zonas de corte, esto se debe a que el transistor no responde de forma inmediata y permanece en saturacion antes de hacer el cambio, claro esta CMOS tambien se ve afectado por lo mismo, pero sus tiempos de respuesta son mas rapidos. 
+   Aplica especialmente a compuertas TTL, ya que son contruidas en BJT, se refiere al tiempo en el que el transistor deja totalmente la zona de saturancion antes de pasar a la zonas de corte, esto se debe a que el transistor no responde de forma inmediata y permanece en saturación antes de hacer el cambio, claro esta CMOS también se ve afectado por lo mismo, pero sus tiempos de respuesta son más rapidos. 
 
 ### Simulaciones 
 1. Negador TTL 74LS04 
 
-   - Tiempo de subida
+Para esto se usaron varias directivas en LTspice, las cuales se pueden ver a continuación:
 
+![tr-tf-TTL](./Imagenes/tr-tf-TTL.png)
 
-   - Tiempo de bajada 
+- Tiempo de subida
 
+   El resultado obtenido mediante la simulación fue de:
+
+   $t_{r} = 8.54511x10^{-7}s$
+
+- Tiempo de bajada 
+
+   El resultado obtenido mediante la simulación fue de:
+
+   $t_{f} = 1.53357^{-7}s$
 
 2. Negador CMOS CD4069
 
-   - Tiempo de subida
+Al igual que en negador en TTL se usaron diversas directivas en LTspice con las que se obtuvieron los tiempos de subida y bajada.
 
+![tr-tf-CMOS](./Imagenes/tr-tf-CMOS.png)
 
-   - Tiempo de bajada 
+- Tiempo de subida
+
+El resultado obtenido mediante la simulación fue de:
+
+   $t_{r} = 1.79417x10^{-7}s$
+
+- Tiempo de bajada 
+
+   El resultado obtenido mediante la simulación fue de:
+
+   $t_{f} = 2.02093x10^{-7}s$
 
 
 ### Experimentalmente
@@ -157,22 +178,23 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
 
 1. Negador TTL 74LS04 
-   - Fan-In 
+- Fan-In 
 
 
-   - Fan-Out 
+
+- Fan-Out 
    Se puede calcular usando los de su datasheet, en donde se divide la corriente de salida de nivel bajo  entre la corriente de entrada de nivel bajo. 
 
-   $$
+   $
    Fan-Out = \frac{I_{LO}}{I_{LI}} = \frac{8 mA}{0.36 mA} = 2
-   $$
+   $
 
 
 2. Negador CMOS CD4069
 
 
 
-## Determinacion de potencia 
+## Determinación de potencia 
 
 
 
