@@ -66,10 +66,10 @@ Ahora, se gráfica la función de transferencia de este circuito, la cual se pue
 
 De la función de transferencia se pueden obtener los siguientes valores:
 
-+$V_{IL} = 2.479V$
-+$V_{IH} = 2.509V$
-+$V_{OL} = 4.975V$
-+$V_{OH} = 13.971mV$
++ $V_{IL} = 2.479V$
++ $V_{IH} = 2.509V$
++ $V_{OL} = 4.975V$
++ $V_{OH} = 13.971mV$
 
 2. Negador CMOS CD4069
 
@@ -88,10 +88,10 @@ Ahora, se gráfica la función de transferencia de este circuito, la cual se pue
 
 De la función de transferencia se pueden obtener los siguiente valores:
 
-+$V_{IL} = 2.508V$
-+$V_{IH} = 2.526V$
-+$V_{OL} = 5V$
-+$V_{OH} = 2.524mV$
++ $V_{IL} = 2.508V$
++ $V_{IH} = 2.526V$
++ $V_{OL} = 5V$
++ $V_{OH} = 2.524mV$
 
 ### Experimentalmente 
 1. Negador TTL 74LS04 
