@@ -15,11 +15,11 @@
 | **Velocidad de operación**     | Más lento que TTL                    | Más rápido que CMOS                   |
 | **Corriente de salida**        | Baja (< 1 mA típicamente)            | Alta (hasta 24 mA máx. en salida baja)|
 | **Margen de ruido**            | Mayor debido a la alta impedancia    | Menor debido a la baja impedancia     |
-| **Tiempo de propagación (t_pd)**| Típicamente 50-200 ns                | Típicamente 10-25 ns                  |
+| **Tiempo de propagación ($t_(pd)$)**| Típicamente 50-200 ns                | Típicamente 10-25 ns                  |
 | **Impedancia de entrada**      | Muy alta                             | Baja                                  |
 | **Consumo dinámico**           | Bajo, depende de la frecuencia       | Alto, incluso a frecuencias bajas     |
-| **Nivel lógico alto (V_OL)**   | ~70% de Vcc                          | 2.4 V mín.                            |
-| **Nivel lógico bajo (V_OH)**   | ~30% de Vcc                          | 0.4 V máx.                            |
+| **Nivel lógico alto ($V_(OL)$)**   | ~70% de Vcc                          | 2.4 V mín.                            |
+| **Nivel lógico bajo ($V_(OH$))**   | ~30% de Vcc                          | 0.4 V máx.                            |
 | **Compatibilidad lógica**      | Compatible con otras familias CMOS   | Compatible con otras familias TTL y algunas CMOS con adaptadores |
 | **Aplicaciones típicas**       | Circuitos de bajo consumo, digitales simples | Circuitos de alta velocidad y cargas más pesadas |
 
@@ -74,7 +74,7 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
    - Tiempo de Retardo 
 
-   El tiempo de retardo o tiempo o propagatin delay ($t_p$), se refiere al tiempo que tarda una señal en propagarse en la compuerta, desde que entra hasta que sale, 
+   El tiempo de retardo o tiempo o propagatin delay ($t_p$), se refiere al tiempo que tarda una señal en propagarse en la compuerta, desde que entra hasta que sale, para esto se toman intervalos desde el momento en que la señal de entrada alcanza el 50% de la tension, hasta que la señal de salida alcanza el nivel equivalente. 
 
    
    - Tiempos de almacenamiento
@@ -90,6 +90,12 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
 2. Negador CMOS CD4069
 
+   - Tiempo de subida
+
+
+   - Tiempo de bajada 
+
+
 ### Experimentalmente
 
 1. Negador TTL 74LS04 
@@ -102,6 +108,12 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
 2. Negador CMOS CD4069
 
+   - Tiempo de subida
+
+
+   - Tiempo de bajada 
+
+
 
 ## Fan-In y Fan-Out 
 
@@ -111,6 +123,7 @@ Para este caso, aun existe una pequeña caida de tension a la salida de la compu
 
 
 2. Negador CMOS CD4069
+
 
 
 ## Determinacion de potencia 
