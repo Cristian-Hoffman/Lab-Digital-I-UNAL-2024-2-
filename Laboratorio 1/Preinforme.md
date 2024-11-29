@@ -189,11 +189,9 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 ## Fan-In y Fan-Out 
 
+ - Fan-In: Para ambos casos, el Fan_In será de uno, ya que las compuertas solo pueden manejar una señal de entrada a la vez, al intentar ingresar una segunda señal, a la salida solo se verá una señal con ruido. 
 
 1. Negador TTL 74LS04 
-- Fan-In 
-
-
 
 - Fan-Out 
    Se puede calcular usando los datos de su datasheet, en donde se divide la corriente de salida de nivel bajo entre la corriente de entrada de nivel bajo. 
