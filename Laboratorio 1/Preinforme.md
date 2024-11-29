@@ -29,7 +29,7 @@
 
 1. Negador en BJT
 
-Para este caso, se utilizo el modelo dado en la hoja de datos de la compuerta 74LS04, ya que el modelo más sencillo de compuerta negadora, apenas era notoria la caida de tensión debido a las resistencias. 
+Para este caso, se utilizó el modelo dado en la hoja de datos de la compuerta 74LS04, ya que el modelo más sencillo de compuerta negadora apenas era notorio la caída de tensión debido a las resistencias. 
 
 ![EquivalenteTTL](./Imagenes/ModeloTTL.png)
 
@@ -95,14 +95,15 @@ De la función de transferencia se pueden obtener los siguiente valores:
 ### Experimentalmente 
 1. Negador TTL 74LS04 
 
-Al observar la salida de la compuerta es notorio que hay una caida de tensión bastante grande, lo que confirma el modelo equivalente de transistores usado anteriormente.
+Al observar la salida de la compuerta es notorio que hay una caída de tensión bastante grande, lo que confirma el modelo equivalente de transistores usado anteriormente.
 
 ![SeñalCuadradaTTL](./Imagenes/SeñalCuadradaTTL.jpeg)
 
 2. Negador CMOS CD4069
 
-Para este caso, aún existe una pequeña caida de tensión a la salida de la compuerta, además de ser bastante menor comparada a la del negador en TTL, por lo que es un resultado aceptable.
+Para este caso, aún existe una pequeña caída de tensión a la salida de la compuerta, además de ser bastante menor comparada a la del negador en TTL, por lo que es un resultado aceptable.
 Esto se sustenta con el $V_{OL}$ encontrado mediante la función de transferencia, el valor para este parámetro tiene un menor margen con respecto al negador en TTL dando como resultado que la caída de tensión observada sea menor
+
 
 ![SeñalcuadradaCMOS](./Imagenes/señalcuacmos.jpeg)
 
@@ -110,12 +111,13 @@ Esto se sustenta con el $V_{OL}$ encontrado mediante la función de transferenci
 
    - Tiempo de Retardo 
 
-   El tiempo de retardo o tiempo o propagating delay ($t_p$), se refiere al tiempo que tarda una señal en propagarse en la compuerta, desde que entra hasta que sale, para esto se toman intervalos desde el momento en que la señal de entrada alcanza el 50% de la tensión, hasta que la señal de salida alcanza el nivel equivalente. 
+  
+ El tiempo de retardo o tiempo o propagation delay ($t_p$), se refiere al tiempo que tarda una señal en propagarse en la compuerta, desde que entra hasta que sale, para esto se toman intervalos desde el momento en que la señal de entrada alcanza el 50% de la tensión, hasta que la señal de salida alcanza el nivel equivalente. 
 
    
    - Tiempos de almacenamiento
 
-   Aplica especialmente a compuertas TTL, ya que son contruidas en BJT, se refiere al tiempo en el que el transistor deja totalmente la zona de saturancion antes de pasar a la zonas de corte, esto se debe a que el transistor no responde de forma inmediata y permanece en saturación antes de hacer el cambio, claro esta CMOS también se ve afectado por lo mismo, pero sus tiempos de respuesta son más rapidos. 
+   Aplica especialmente a compuertas TTL, ya que son construidas en BJT, se refiere al tiempo en el que el transistor deja totalmente la zona de saturación antes de pasar a la zona de corte, esto se debe a que el transistor no responde de forma inmediata y permanece en saturación antes de hacer el cambio, claro está CMOS también se ve afectado por lo mismo, pero sus tiempos de respuesta son más rápidos. 
 
 ### Simulaciones 
 1. Negador TTL 74LS04 
@@ -159,18 +161,12 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 1. Negador TTL 74LS04 
 
-   - Tiempo de subida
-
-
-   - Tiempo de bajada 
+   
 
 
 2. Negador CMOS CD4069
 
-   - Tiempo de subida
 
-
-   - Tiempo de bajada 
 
 
 
@@ -183,10 +179,9 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 
 - Fan-Out 
-   Se puede calcular usando los de su datasheet, en donde se divide la corriente de salida de nivel bajo  entre la corriente de entrada de nivel bajo. 
-
+   Se puede calcular usando los datos de su datasheet, en donde se divide la corriente de salida de nivel bajo entre la corriente de entrada de nivel bajo. 
    
-   $Fan-Out = \frac{I_{LO}}{I_{LI}} = \frac{8 mA}{0.36 mA} = 2$
+   $Fan-Out = \frac{I_{LO}}{I_{LI}} = \frac{8 mA}{0.4 mA} = 20$
 
 
 2. Negador CMOS CD4069
@@ -195,21 +190,26 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 ## Determinación de potencia 
 
+Aunque para la disipación total de la compuerta hay que tener en cuenta la corriente estatica (sin nada conectado), la corriente que esta consume es muy baja, por lo que solo se toma en cuenta la corriente dinámica (al usar la compuerta), lo que da una potencia de 0.26W (canal 1). 
 
+ ![Disipacion](./Imagenes/Circuito%20oscilador%20de%203.png)
 
 ## Circuito propuesto
+
+Se implemento un circuito sencillo en el que, al introducir una señal de entrada, la compuerta al ser una negadora apagaba el led, por lo que al estar sin la señal se mantiene prendido. 
 
 https://github.com/user-attachments/assets/32fcef04-ce6f-4e2a-9446-2078a086190f
 
 
 ## Oscilador en anillo
 
-Se montarón dos circuitos diferentes en anillo haciendo uso del negador CMOS, exactamente se realizó una configuración con tres y cinco puertas.
+Se montan dos circuitos diferentes en anillo haciendo uso del negador CMOS, exactamente se realizó una configuración con tres y cinco puertas.
 Sus respectivas simulaciones se pueden observar a continuación:
+
 
 ### Simulaciones
 
-Se empleo una directa de LTspice en la que se indicaba una condición inicial en el circuito, está consistio en la alimentación inicial de un pulso de amplitud 5V. Posteriormente, el circuito oscilaría a partir de esta señal inicial. 
+Se empleo una directa de LTspice en la que se indicaba una condición inicial en el circuito, está consiste en la alimentación inicial de un pulso de amplitud 5V. Posteriormente, el circuito oscilaría a partir de esta señal inicial.
 
 1. Oscilador con 3 compuertas
 
@@ -222,7 +222,7 @@ Se empleo una directa de LTspice en la que se indicaba una condición inicial en
    ![Frecuencia3Puertas](./Imagenes/Oscilador%20de%203.png)
 
    Es bueno resaltar que la forma de onda en la simulación es cuadrada debido a la condición inicial mientras que en la prueba experimental dicha forma de onda será totalmente distinta debido a que no se alimentará al circuito con una señal inicial.
-   Esta condición inicial se llevo a cabo en LTspice porque el tiempo de ejecución de la simulación era demasiado alto debido a que no había una señal inicial, sino que era solamente ruido.
+   Esta condición inicial se llevó a cabo en LTspice porque el tiempo de ejecución de la simulación era demasiado alto debido a que no había una señal inicial, sino que era solamente ruido.
 
 2. Oscilador con 5 compuertas
 
