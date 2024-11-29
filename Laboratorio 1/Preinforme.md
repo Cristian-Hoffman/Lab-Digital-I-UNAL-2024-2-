@@ -217,7 +217,7 @@ Para obtener los datos de tiempos de subida y tiempos de bajada experimentalment
 
 Aunque para la disipación total de la compuerta hay que tener en cuenta la corriente estatica (sin nada conectado), la corriente que esta consume es muy baja, por lo que solo se toma en cuenta la corriente dinámica (al usar la compuerta), lo que da una potencia de 0.26W (canal 1). 
 
- ![Disipacion](./Imagenes/Circuito%20oscilador%20de%203.png)
+ ![Disipacion](./Imagenes/Disipacion.jpeg)
 
 ## Circuito propuesto
 
