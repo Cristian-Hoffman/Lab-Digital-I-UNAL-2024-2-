@@ -178,7 +178,9 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 1. Negador TTL 74LS04 
 
-   
+   ![NegadorTTL](./Imagenes/NegadorTTL.png)
+
+   ![TransferFuncTTL](./Imagenes/TransferFuncTTL.png)
 
 
 2. Negador CMOS CD4069
