@@ -199,9 +199,9 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 ## Circuito propuesto
 
-<iframe width="320" height="180" src="https://www.youtube.com/shorts/BrqkxL82p68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
 
-[![video1](https://youtube.com/shorts/BrqkxL82p68?si=h8uAIfCkN0g-2Kyw)](https://www.youtube.com/shorts/BrqkxL82p68)
+https://github.com/user-attachments/assets/32fcef04-ce6f-4e2a-9446-2078a086190f
+
 
 ## Oscilador en anillo
 
