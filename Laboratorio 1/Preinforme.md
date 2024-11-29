@@ -183,7 +183,7 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 2. Negador CMOS CD4069
 
-
+![SalidasInversorCmos](./Imagenes/SalidasInversorCmos.png)
 
 
 
