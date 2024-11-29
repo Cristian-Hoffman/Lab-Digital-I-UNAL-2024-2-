@@ -117,12 +117,16 @@ Esto se sustenta con el $V_{OL}$ encontrado mediante la función de transferenci
 
    Aplica especialmente a compuertas TTL, ya que son contruidas en BJT, se refiere al tiempo en el que el transistor deja totalmente la zona de saturancion antes de pasar a la zonas de corte, esto se debe a que el transistor no responde de forma inmediata y permanece en saturación antes de hacer el cambio, claro esta CMOS también se ve afectado por lo mismo, pero sus tiempos de respuesta son más rapidos. 
 
-### Simulaciones 
-1. Negador TTL 74LS04 
+### Simulaciones
 
-Para esto se usarón varias directivas en LTspice, las cuales se pueden ver a continuación:
+Para esto se usaron diversas directivas en LTspice con las que se obtuvieron los tiempos de subida y bajada.
+Estas se pueden ver a continuación:
 
 ![tr-tf-TTL](./Imagenes/tr-tf-TTL.png)
+
+1. Negador TTL 74LS04 
+
+Los resultados para esta compuerta fueron:
 
 - Tiempo de subida
 
@@ -138,9 +142,7 @@ Para esto se usarón varias directivas en LTspice, las cuales se pueden ver a co
 
 2. Negador CMOS CD4069
 
-Al igual que en negador en TTL se usaron diversas directivas en LTspice con las que se obtuvieron los tiempos de subida y bajada.
-
-![tr-tf-CMOS](./Imagenes/tr-tf-CMOS.png)
+Aplicando las mismas directivas, pero en este caso para el CMOS CD4069 se cálculo lo siguiente:
 
 - Tiempo de subida
 
@@ -154,6 +156,21 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
    $t_{f} = 2.02093x10^{-7}s$
 
+Por otro lado, los tiempos de propagación del retardo ($t_{phl}$ y $t_{plh}$) se encontraron mediante las siguientes directivas en LTspice.
+
+![tphl-tplh](./Imagenes/tpLH-tpHL.png)
+
+Los cálculos obtenidos mediante este método se pueden ver a continuación:
+
+1. Negador TTL 74LS04
+
+   - $t_{phl} = 450013ns$
+   - $t_{plh} = 550017ns$
+
+2. Negador CMOS CD4069
+
+   - $t_{phl} = 450074ns$
+   - $t_{plh} = 550164ns$
 
 ### Experimentalmente
 
