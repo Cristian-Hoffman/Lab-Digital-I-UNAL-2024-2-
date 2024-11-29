@@ -189,7 +189,7 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 ![SalidasInversorCmos](./Imagenes/SalidasInversorCmos.png)
 
-El eje Y esta representando 1 milivoltio por cada punto, solo que lo olvidamos a la hora de poner el titulo de ese eje, asi mismo el eje X estaria en el rango d elos nano segundos
+El eje Y esta representando 1 milivoltio por cada punto, solo que lo olvidamos a la hora de poner el titulo de ese eje, asi mismo el eje X estaria en el rango de los nano segundos
 
 ![FuncionTranCMOS](./Imagenes/FuncionTranCMOS.png)
 
