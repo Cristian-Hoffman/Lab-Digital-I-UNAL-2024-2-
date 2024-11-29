@@ -176,6 +176,9 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 ### Experimentalmente
 
+Para obtener los datos de tiempos de subida y tiempos de bajada experimentalmente se planteó usar la herramienta de Matlab, sacar un % de los valores que representan las pendientes que corresponden, pero, los datos obtenidos experimentalmente no permitieron lograr esto, no obtuvimos la suficiente cantidad de datos del osciloscopio. 
+
+
 1. Negador TTL 74LS04 
 
    ![NegadorTTL](./Imagenes/NegadorTTL.png)
@@ -193,7 +196,6 @@ El eje Y esta representando 1 milivoltio por cada punto, solo que lo olvidamos a
 
 ![FuncionTranCMOS](./Imagenes/FuncionTranCMOS.png)
 
-Para obtener los datos de tiempos de subida y tiempos de bajada experimentalmente se planteó usar la herramienta de Matlab, sacar un % de los valores que respresentan las pendientes que corresponden, pero, los datos obtenidos experimentalmente no permitieron lograr esto, no obtuvimos la suficiente cantidad de datos del osciloscopio. 
 
 ## Fan-In y Fan-Out 
 
