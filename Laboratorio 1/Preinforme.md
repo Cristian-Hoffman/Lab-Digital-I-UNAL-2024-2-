@@ -199,7 +199,6 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 ## Circuito propuesto
 
-
 https://github.com/user-attachments/assets/32fcef04-ce6f-4e2a-9446-2078a086190f
 
 
