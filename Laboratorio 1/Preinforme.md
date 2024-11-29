@@ -67,8 +67,8 @@ De la función de transferencia se pueden obtener los siguientes valores:
 
 + $V_{IL} = 2.479V$
 + $V_{IH} = 2.509V$
-+ $V_{OL} = 4.975V$
-+ $V_{OH} = 13.971mV$
++ $V_{OL} = 13.971mV$
++ $V_{OH} = 4.975V$
 
 2. Negador CMOS CD4069
 
@@ -89,8 +89,8 @@ De la función de transferencia se pueden obtener los siguiente valores:
 
 + $V_{IL} = 2.508V$
 + $V_{IH} = 2.526V$
-+ $V_{OL} = 5V$
-+ $V_{OH} = 2.524mV$
++ $V_{OL} = 2.524mV$
++ $V_{OH} = 5V$
 
 ### Experimentalmente 
 1. Negador TTL 74LS04 
@@ -120,7 +120,7 @@ Esto se sustenta con el $V_{OL}$ encontrado mediante la función de transferenci
 ### Simulaciones 
 1. Negador TTL 74LS04 
 
-Para esto se usaron varias directivas en LTspice, las cuales se pueden ver a continuación:
+Para esto se usarón varias directivas en LTspice, las cuales se pueden ver a continuación:
 
 ![tr-tf-TTL](./Imagenes/tr-tf-TTL.png)
 
@@ -185,9 +185,8 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 - Fan-Out 
    Se puede calcular usando los de su datasheet, en donde se divide la corriente de salida de nivel bajo  entre la corriente de entrada de nivel bajo. 
 
-   $
-   Fan-Out = \frac{I_{LO}}{I_{LI}} = \frac{8 mA}{0.36 mA} = 2
-   $
+   
+   $Fan-Out = \frac{I_{LO}}{I_{LI}} = \frac{8 mA}{0.36 mA} = 2$
 
 
 2. Negador CMOS CD4069
