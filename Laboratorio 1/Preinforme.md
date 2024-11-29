@@ -255,11 +255,14 @@ Se empleo una directa de LTspice en la que se indicaba una condición inicial en
 
 1. Oscilador con 3 compuertas
 
-
 ![3compuertas](./Imagenes/3compuertas.jpeg)
 
 2. Oscilador con 5 compuertas 
 
 ![5compuertas](./Imagenes/5compuertas.jpeg)
 
+Se puede observar que una de las diferencias fundamentales entre ambas configuraciones es que la frecuencia se reduce al conectar más compuertas negadoras en el anillo de oscilación, esto se refuerza con los datos obtenidos de las simulaciones.
 
+Por otra parte, vemos que hay una variación significativa en cuanto a la frecuencia medida experimentalmente, esto se puede deber a que hubo una mala conexión durante el montaje del circuito en ambos casos. No obstante, es bueno tener en cuenta que los resultados reales en la gran mayoría de ocasiones cambian respecto a su cálculo teórico o simulación.
+
+Además, la señal que se observá en ambos casos se parece a una forma de onda entre una señal sinusoidal y una de ruido. Al mirar el comportamiento completo mostrado por el osciloscopio uno se puede dar cuenta que la señal se asemeja mucho más a la forma de onda de una señal con ruido, este aspecto tiene sentido porque a ninguna de las dos configuraciones se le está aplicando un pulso inicial de 5V a diferencia de las simulaciones.
