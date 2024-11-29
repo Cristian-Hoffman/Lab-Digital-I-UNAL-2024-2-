@@ -180,6 +180,8 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
    ![NegadorTTL](./Imagenes/NegadorTTL.png)
 
+   El eje X esta en microsegundos
+
    ![TransferFuncTTL](./Imagenes/TransferFuncTTL.png)
 
 
@@ -187,8 +189,11 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 ![SalidasInversorCmos](./Imagenes/SalidasInversorCmos.png)
 
+El eje Y esta representando 1 milivoltio por cada punto, solo que lo olvidamos a la hora de poner el titulo de ese eje, asi mismo el eje X estaria en el rango d elos nano segundos
+
 ![FuncionTranCMOS](./Imagenes/FuncionTranCMOS.png)
 
+Para obtener los datos de tiempos de subida y tiempos de bajada experimentalmente se planteó usar la herramienta de Matlab, sacar un % de los valores que respresentan las pendientes que corresponden, pero, los datos obtenidos experimentalmente no permitieron lograr esto, no obtuvimos la suficiente cantidad de datos del osciloscopio. 
 
 ## Fan-In y Fan-Out 
 
