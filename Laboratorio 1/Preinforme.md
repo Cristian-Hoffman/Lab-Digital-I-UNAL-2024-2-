@@ -199,8 +199,9 @@ Al igual que en negador en TTL se usaron diversas directivas en LTspice con las 
 
 ## Circuito propuesto
 
-
-
+<video width="320" height="240" controls>
+  <source src="./Imagenes/CircuitoPropuesto.mp4" type="video/mp4">
+</video>
 
 ## Oscilador en anillo
 
