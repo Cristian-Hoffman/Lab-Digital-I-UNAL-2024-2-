@@ -185,6 +185,7 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 ![SalidasInversorCmos](./Imagenes/SalidasInversorCmos.png)
 
+![FuncionTranCMOS](./Imagenes/FuncionTranCMOS.png)
 
 
 ## Fan-In y Fan-Out 
