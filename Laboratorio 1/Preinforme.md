@@ -126,35 +126,35 @@ Estas se pueden ver a continuación:
 
 1. Negador TTL 74LS04 
 
-Los resultados para esta compuerta fueron:
+   Los resultados para esta compuerta fueron:
 
-- Tiempo de subida
+   - Tiempo de subida
 
-   El resultado obtenido mediante la simulación fue de:
+      El resultado obtenido mediante la simulación fue de:
 
-   $t_{r} = 8.54511x10^{-7}s$
+      $t_{r} = 8.54511x10^{-7}s$
 
-- Tiempo de bajada 
+   - Tiempo de bajada 
 
-   El resultado obtenido mediante la simulación fue de:
+      El resultado obtenido mediante la simulación fue de:
 
-   $t_{f} = 1.53357x10^{-7}s$
+      $t_{f} = 1.53357x10^{-7}s$
 
 2. Negador CMOS CD4069
 
-Aplicando las mismas directivas, pero en este caso para el CMOS CD4069 se cálculo lo siguiente:
+   Aplicando las mismas directivas, pero en este caso para el CMOS CD4069 se cálculo lo siguiente:
 
-- Tiempo de subida
+   - Tiempo de subida
 
-   El resultado obtenido mediante la simulación fue de:
+      El resultado obtenido mediante la simulación fue de:
 
-   $t_{r} = 1.79417x10^{-7}s$
+      $t_{r} = 1.79417x10^{-7}s$
 
-- Tiempo de bajada 
+   - Tiempo de bajada 
 
-   El resultado obtenido mediante la simulación fue de:
+      El resultado obtenido mediante la simulación fue de:
 
-   $t_{f} = 2.02093x10^{-7}s$
+      $t_{f} = 2.02093x10^{-7}s$
 
 Por otro lado, los tiempos de propagación del retardo ($t_{phl}$ y $t_{plh}$) se encontraron mediante las siguientes directivas en LTspice.
 
