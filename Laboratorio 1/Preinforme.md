@@ -216,9 +216,8 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 ## Circuito propuesto
 
-<video width="320" height="240" controls>
-  <source src="./Imagenes/CircuitoPropuesto.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/32fcef04-ce6f-4e2a-9446-2078a086190f
+
 
 ## Oscilador en anillo
 
