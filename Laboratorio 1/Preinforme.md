@@ -201,7 +201,9 @@ Los cálculos obtenidos mediante este método se pueden ver a continuación:
 
 2. Negador CMOS CD4069
 
-
+   Para este caso, también se aprovecharán los datos de la datasheet, pero se divide la corriente de salida en nivel alto entre la corriente de entrada. 
+   
+   $Fan-Out = \frac{I_{HO}}{I_{IN}} = \frac{0.88 mA}{ 10 um} = 80$
 
 ## Determinación de potencia 
 
